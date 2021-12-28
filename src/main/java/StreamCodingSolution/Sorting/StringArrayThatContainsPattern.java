@@ -18,7 +18,7 @@ public class StringArrayThatContainsPattern {
 
         return Arrays.stream(cms)
                 .filter(s -> s.toLowerCase().contains(re))
-                .toArray(String[]::new);
+                .toArray(size -> new String[size]); // --> Method reference String[]::new
     }
 
     public static String[] cmsSelector2(String[] cms, String re) {

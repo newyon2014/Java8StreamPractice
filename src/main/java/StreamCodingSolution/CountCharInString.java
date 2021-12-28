@@ -15,6 +15,7 @@ public class CountCharInString {
         long count = name.chars()
                 .filter(e -> (char) e == 'i')
                 .count();
+
         // count the character i and s
         long count2 = name.chars()
                 .filter(e -> (char) e == 'i' || (char)e == 's')
